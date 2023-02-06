@@ -1,7 +1,16 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
 .navbar-1 {
     background: $brown;
+
     .container {
-       
+
         color: #fff;
         display: flex;
         align-items: center;
@@ -55,6 +64,7 @@
 }
 
 .navbar-2 {
+    background: $grey;
     .container {
         padding: 5px 20px;
     }
@@ -147,4 +157,3 @@
         }
     }
 }
-
