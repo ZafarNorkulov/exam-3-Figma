@@ -1,0 +1,150 @@
+.navbar-1 {
+    background: $brown;
+    .container {
+       
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 20px;
+    }
+
+    .nav__list {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        list-style: none;
+        padding: 5px 10px;
+
+    }
+
+    .nav__list:nth-child(1) {
+        span {
+            color: $green;
+        }
+    }
+
+    .nav__list:nth-child(2) {
+
+        .nav__item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        i {
+            color: $green;
+        }
+    }
+
+    .nav__list:hover {
+        background: #6D5B6A;
+
+    }
+
+    .nav__item:nth-child(2) {
+        background: #6D5B6A;
+    }
+
+    .nav__link {
+        color: #fff;
+    }
+
+    i {
+        padding-right: 1rem;
+    }
+}
+
+.navbar-2 {
+    .container {
+        padding: 5px 20px;
+    }
+
+    .nav__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+
+    }
+
+    .nav__item:nth-child(1) {
+        display: none;
+    }
+
+    .nav__item:nth-child(9) {
+        .nav__link {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h5:nth-child(2) {
+            color: $grey2;
+        }
+    }
+
+    .nav__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: 1.3rem;
+            padding-right: 10px;
+        }
+    }
+
+    h5 {
+        font-family: 'Literal', sans-serif;
+        line-height: 19px;
+        font-size: .875rem;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 412px) {
+    .navbar-1 {
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .nav__list:nth-child(1) {
+            display: none;
+        }
+
+        h5 {
+            font-size: 12px;
+        }
+
+        .nav__list:nth-child(2) {
+            background: $brown;
+        }
+
+        .whatsphone {
+            .nav__link:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+
+    .navbar-2 {
+        .nav__item {
+            display: none;
+        }
+
+
+        .nav__item:nth-child(1),
+        .nav__item:nth-child(6),
+        .nav__item:nth-child(9) {
+            display: block;
+        }
+    }
+}
+

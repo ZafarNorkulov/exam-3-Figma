@@ -1,0 +1,153 @@
+footer {
+
+    // footbar
+    nav {
+        background: #746471;
+        padding: 2.125rem;
+        text-align: center;
+    }
+
+    .foot__list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .foot__link {
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+    }
+
+    .foot__menu {
+        background: $brown;
+        color: #fff;
+        padding-bottom: 23px;
+
+        h4 {
+            font-family: 'Roboto Medium', sans-serif;
+            font-size: 18px;
+            line-height: 21px;
+            color: $green;
+        }
+
+        a {
+            font-family: 'Literal', sans-serif;
+            color: #fff;
+        }
+    }
+
+    .foot__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    form {
+        padding-top: 14px;
+    }
+
+    input {
+        width: 218px;
+        display: block;
+        padding: 6px;
+        margin-bottom: .625rem;
+    }
+
+    #name {
+        margin-right: .625rem;
+    }
+
+    textarea {
+        display: block;
+        width: 100%;
+        padding: 6px;
+    }
+
+    button {
+        float: right;
+        padding: .625rem 4rem;
+        border-radius: 5px;
+        margin-top: 10px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline: 2px solid $green;
+    }
+
+}
+
+.foot__title {
+    padding: 1.75rem 0 2.75rem;
+}
+
+.list {
+    padding-top: 22px;
+    list-style: none;
+
+    &__item+&__item {
+        padding-top: 1rem;
+    }
+
+
+    &__link {
+        span {
+            font-size: 1rem;
+            line-height: 22px;
+            padding-left: 10px;
+        }
+    }
+
+}
+
+.foot__bottom {
+    text-align: center;
+
+    hr {
+        margin-bottom: 20px;
+    }
+
+    span {
+        color: #A69BA4;
+        font-size: 16px;
+        line-height: 100%;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    footer {
+
+        .foot__list {
+            flex-direction: column;
+
+            i {
+                font-size: 12px;
+            }
+        }
+
+        .foot__item+.foot__item {
+            padding-top: .875rem;
+        }
+
+        .foot__container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+        }
+
+
+    }
+}

@@ -1,0 +1,169 @@
+.orders {
+    background: #fff;
+    padding-top: 4.875rem;
+    padding-bottom: 5rem;
+    position: relative;
+    text-align: center;
+
+    &__title {
+        text-align: center;
+        font-family: 'Karton', cursive;
+        text-transform: uppercase;
+        padding-bottom: 3rem;
+
+        h3 {
+            font-weight: normal !important;
+        }
+
+        span {
+            color: $green;
+        }
+    }
+
+    &__card {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: auto auto;
+        list-style: none;
+        padding-bottom: 1.25rem;
+    }
+
+    .order__item {
+        padding: 0 1.25rem;
+    }
+
+
+
+    h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    h5 {
+        padding: 10px 0 5px;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .add {
+        display: flex;
+        padding-bottom: 17px;
+
+        h4 {
+            padding: 0 1.5rem;
+        }
+
+
+    }
+
+    span {
+        font-weight: normal;
+    }
+
+
+
+    .add-btn {
+        padding: 0.5rem 2.2rem;
+        font-size: 16px;
+        line-height: 150%;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    &__btns {
+        padding: 2.5rem 3.125rem;
+
+        button {
+            font-size: 16px;
+            line-height: 150%;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            color: $grey2;
+            background: $grey;
+            border: 1px solid transparent;  
+        }
+
+        button:focus-within {
+            border: 1px solid $green;
+            color: $green;
+            background: #fff;
+        }
+    }
+
+    .placeorder {
+        font-weight: 800;
+        padding: .8rem 3.125rem;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+
+    .orders__flower {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.plus,
+.minus {
+    width: 21px;
+    height: 21px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.minus {
+    color: $grey2;
+    background: #E0E0E0;
+}
+
+
+
+@media only screen and (max-width: 412px) {
+    .orders {
+        padding: 50px 0;
+        &__card {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__flower {
+            display: none;
+        }
+        .add{
+            justify-content: space-between;
+            h4{
+                padding: 0;
+            }
+        }
+
+        .add-btn {
+            display: block;
+            width: 100%;
+            padding: .375rem 1.375rem;
+        }
+        &__btns{
+            width: 100%;
+            padding: 50px 0;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 10px   ;
+        }
+        .placeorder{
+            width: 100%;
+        }
+    }
+}

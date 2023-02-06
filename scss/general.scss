@@ -1,0 +1,63 @@
+@import url('https://fonts.cdnfonts.com/css/literal');
+@import url('https://fonts.cdnfonts.com/css/karton');
+@import url('https://fonts.cdnfonts.com/css/roboto medium');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// colors
+$brown: #5B4A58;
+$green: #6AAE55;
+$grey: #F9F8FB;
+$grey2: #828282;
+
+body {
+    font-family: 'Literal', sans-serif;
+    color: #5B4A58;
+}
+
+.container {
+    max-width: 1150px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 32px;
+}
+
+h4 {
+    font-size: 1rem;
+    font-family: 'Literal', sans-serif;
+}
+
+h5 {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+h6 {
+    font-size: .63rem;
+    line-height: 22px;
+}
+
+button {
+    background: $green;
+    color: #fff;
+    border-radius: .625rem;
+    -webkit-border-radius: .625rem;
+    -moz-border-radius: .625rem;
+    -ms-border-radius: .625rem;
+    -o-border-radius: .625rem;
+    font-weight: bold;
+    border:none; 
+    cursor: pointer;
+}
